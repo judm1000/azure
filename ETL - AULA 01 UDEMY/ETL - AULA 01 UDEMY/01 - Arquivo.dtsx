@@ -1,0 +1,1046 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="9/20/2021 10:19:58 AM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="LAPTOP-B5G85DUM"
+  DTS:CreatorName="LAPTOP-B5G85DUM\judm1"
+  DTS:DTSID="{EF4ABAF4-F159-484E-A546-CAA2232CB52F}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="15.0.2000.170"
+  DTS:LocaleID="1046"
+  DTS:ObjectName="Package"
+  DTS:PackageType="5"
+  DTS:VersionBuild="1"
+  DTS:VersionGUID="{A6AF788D-2740-4761-94B1-018306DF1D11}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[CN_Arquivo]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{F29ACC93-3688-407E-B93D-6733D8F447E9}"
+      DTS:ObjectName="CN_Arquivo">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1046"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\judm1\Documents\SQL Server Management Studio\SSIS - UDEMY AULAS\Arquivos\Arquivos\Aula 18 - Carregar Arquivo Txt\customer.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CustNo"
+              DTS:DTSID="{65777168-74F2-4A5D-B4C9-B39DC601C8F8}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Company"
+              DTS:DTSID="{A8971178-7C1B-4794-B1DF-9F0A0AB84F70}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Addr1"
+              DTS:DTSID="{EAD26C91-E732-4D19-A079-1E24889D2F7A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Addr2"
+              DTS:DTSID="{B9A06960-A399-49B6-9F19-E5D6BB6627A7}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="City"
+              DTS:DTSID="{0A02BF62-AE54-44E8-8AB9-2AF3A388D02E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="State"
+              DTS:DTSID="{CE2C551B-3258-4D8C-8449-68C4C5FCEC7D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Zip"
+              DTS:DTSID="{EA1DFB1D-2C94-48BB-AB08-1A627FD6F548}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Country"
+              DTS:DTSID="{F65EAA17-9E64-4145-982D-36942467E05D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Phone"
+              DTS:DTSID="{DC1D49E5-E8D6-46CC-850E-E259D8AC2FDB}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="FAX"
+              DTS:DTSID="{D6EF8FBF-A1FF-4B3A-82B9-8A444A76E4AD}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="TaxRate"
+              DTS:DTSID="{AF947B0A-02AE-4016-9863-783D651B038B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Contact"
+              DTS:DTSID="{AA749D7D-4569-4943-9800-4C8B4EFB09FB}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="LastInvoiceDate"
+              DTS:DTSID="{5E5147B9-F4D7-4656-ADAB-E68EFA5B4284}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[CN_TGT_Arquivo]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{CF3F8C07-40F5-4960-A00B-B52B43FDF6E8}"
+      DTS:ObjectName="CN_TGT_Arquivo">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1046"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\judm1\Documents\SQL Server Management Studio\SSIS - UDEMY AULAS\Arquivos\Arquivos\Aula 18 - Carregar Arquivo Txt\Cliente_v2.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CustNo"
+              DTS:DTSID="{25FA9E72-C04D-4848-9720-F947D662EC27}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Company"
+              DTS:DTSID="{2716795E-F971-4DAB-AECB-99E1DE5DCACB}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Addr1"
+              DTS:DTSID="{F093AB1A-A65E-46FE-B946-A8FCFFF6D980}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Addr2"
+              DTS:DTSID="{B39BCB5D-EAB9-42DD-A11B-732AEF7D1225}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="City"
+              DTS:DTSID="{CDD8C76E-6D10-453D-B0AE-1133079A84F7}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="State"
+              DTS:DTSID="{C9B4ABB3-73FF-4FFF-B388-A7CD477FFD46}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Zip"
+              DTS:DTSID="{D5E9B640-BE3D-4B3E-A996-B0A6AAAD3080}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Country"
+              DTS:DTSID="{63078BBA-FAAB-48B9-968F-7226A81D698C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Phone"
+              DTS:DTSID="{AA333922-5F8A-46FB-9F48-E0A7F67902F7}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="FAX"
+              DTS:DTSID="{2E1A7D5E-6753-47EC-BF9E-885302E4661C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="TaxRate"
+              DTS:DTSID="{B802E86C-306E-4FF3-8936-6D04A28AAC4D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Contact"
+              DTS:DTSID="{DB6EBC20-AEB3-4C8B-8CB6-08C51AA691F5}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="LastInvoiceDate"
+              DTS:DTSID="{6FEDE072-F228-497E-ACFD-1348FE43386D}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\ETL - Arquivo"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Tarefa Fluxo de Dados"
+      DTS:DTSID="{4A55538E-3B9F-41F2-B4C5-8073B6141385}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="ETL - Arquivo"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\ETL - Arquivo\SRC_Arquivo"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Origem de Arquivo Simples;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos os Direitos Reservados; http://www.microsoft.com/sql/support;1"
+              description="Origem de Arquivo Simples"
+              localeId="1046"
+              name="SRC_Arquivo"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Especifica se colunas de comprimento zero são tratadas como nulas."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica o nome de uma coluna de saída que contém o nome do arquivo. Se nenhum nome for especificado, nenhuma coluna de saída contendo o nome de arquivo será gerada."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\ETL - Arquivo\SRC_Arquivo.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[CN_Arquivo]"
+                  connectionManagerRefId="Package.ConnectionManagers[CN_Arquivo]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\ETL - Arquivo\SRC_Arquivo.Outputs[Saída de Origem de Arquivo Simples]"
+                  name="Saída de Origem de Arquivo Simples">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\ETL - Arquivo\SRC_Arquivo.Outputs[Saída de Origem de Arquivo Simples].Columns[CustNo]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversão"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL - Arquivo\SRC_Arquivo.Outputs[Saída de Origem de Arquivo Simples].ExternalColumns[CustNo]"
+                      length="50"
+                      lineageId="Package\ETL - Arquivo\SRC_Arquivo.Outputs[Saída de Origem de Arquivo Simples].Columns[CustNo]"
+                      name="CustNo"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica se a coluna usa as rotinas de análise de localidade neutro mais rápidas."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica se os dados estão em formato binário."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL - Arquivo\SRC_Arquivo.Outputs[Saída de Origem de Arquivo Simples].Columns[Company]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversão"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL - Arquivo\SRC_Arquivo.Outputs[Saída de Origem de Arquivo Simples].ExternalColumns[Company]"
+                      length="50"
+                      lineageId="Package\ETL - Arquivo\SRC_Arquivo.Outputs[Saída de Origem de Arquivo Simples].Columns[Company]"
+                      name="Company"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica se a coluna usa as rotinas de análise de localidade neutro mais rápidas."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica se os dados estão em formato binário."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL - Arquivo\SRC_Arquivo.Outputs[Saída de Origem de Arquivo Simples].Columns[Addr1]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversão"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL - Arquivo\SRC_Arquivo.Outputs[Saída de Origem de Arquivo Simples].ExternalColumns[Addr1]"
+                      length="50"
+                      lineageId="Package\ETL - Arquivo\SRC_Arquivo.Outputs[Saída de Origem de Arquivo Simples].Columns[Addr1]"
+                      name="Addr1"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica se a coluna usa as rotinas de análise de localidade neutro mais rápidas."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica se os dados estão em formato binário."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL - Arquivo\SRC_Arquivo.Outputs[Saída de Origem de Arquivo Simples].Columns[Addr2]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversão"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL - Arquivo\SRC_Arquivo.Outputs[Saída de Origem de Arquivo Simples].ExternalColumns[Addr2]"
+                      length="50"
+                      lineageId="Package\ETL - Arquivo\SRC_Arquivo.Outputs[Saída de Origem de Arquivo Simples].Columns[Addr2]"
+                      name="Addr2"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica se a coluna usa as rotinas de análise de localidade neutro mais rápidas."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica se os dados estão em formato binário."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL - Arquivo\SRC_Arquivo.Outputs[Saída de Origem de Arquivo Simples].Columns[City]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversão"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL - Arquivo\SRC_Arquivo.Outputs[Saída de Origem de Arquivo Simples].ExternalColumns[City]"
+                      length="50"
+                      lineageId="Package\ETL - Arquivo\SRC_Arquivo.Outputs[Saída de Origem de Arquivo Simples].Columns[City]"
+                      name="City"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica se a coluna usa as rotinas de análise de localidade neutro mais rápidas."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica se os dados estão em formato binário."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL - Arquivo\SRC_Arquivo.Outputs[Saída de Origem de Arquivo Simples].Columns[State]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversão"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL - Arquivo\SRC_Arquivo.Outputs[Saída de Origem de Arquivo Simples].ExternalColumns[State]"
+                      length="50"
+                      lineageId="Package\ETL - Arquivo\SRC_Arquivo.Outputs[Saída de Origem de Arquivo Simples].Columns[State]"
+                      name="State"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica se a coluna usa as rotinas de análise de localidade neutro mais rápidas."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica se os dados estão em formato binário."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL - Arquivo\SRC_Arquivo.Outputs[Saída de Origem de Arquivo Simples].Columns[Zip]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversão"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL - Arquivo\SRC_Arquivo.Outputs[Saída de Origem de Arquivo Simples].ExternalColumns[Zip]"
+                      length="50"
+                      lineageId="Package\ETL - Arquivo\SRC_Arquivo.Outputs[Saída de Origem de Arquivo Simples].Columns[Zip]"
+                      name="Zip"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica se a coluna usa as rotinas de análise de localidade neutro mais rápidas."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica se os dados estão em formato binário."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL - Arquivo\SRC_Arquivo.Outputs[Saída de Origem de Arquivo Simples].Columns[Country]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversão"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL - Arquivo\SRC_Arquivo.Outputs[Saída de Origem de Arquivo Simples].ExternalColumns[Country]"
+                      length="50"
+                      lineageId="Package\ETL - Arquivo\SRC_Arquivo.Outputs[Saída de Origem de Arquivo Simples].Columns[Country]"
+                      name="Country"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica se a coluna usa as rotinas de análise de localidade neutro mais rápidas."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica se os dados estão em formato binário."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL - Arquivo\SRC_Arquivo.Outputs[Saída de Origem de Arquivo Simples].Columns[Phone]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversão"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL - Arquivo\SRC_Arquivo.Outputs[Saída de Origem de Arquivo Simples].ExternalColumns[Phone]"
+                      length="50"
+                      lineageId="Package\ETL - Arquivo\SRC_Arquivo.Outputs[Saída de Origem de Arquivo Simples].Columns[Phone]"
+                      name="Phone"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica se a coluna usa as rotinas de análise de localidade neutro mais rápidas."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica se os dados estão em formato binário."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL - Arquivo\SRC_Arquivo.Outputs[Saída de Origem de Arquivo Simples].Columns[FAX]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversão"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL - Arquivo\SRC_Arquivo.Outputs[Saída de Origem de Arquivo Simples].ExternalColumns[FAX]"
+                      length="50"
+                      lineageId="Package\ETL - Arquivo\SRC_Arquivo.Outputs[Saída de Origem de Arquivo Simples].Columns[FAX]"
+                      name="FAX"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica se a coluna usa as rotinas de análise de localidade neutro mais rápidas."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica se os dados estão em formato binário."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL - Arquivo\SRC_Arquivo.Outputs[Saída de Origem de Arquivo Simples].Columns[TaxRate]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversão"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL - Arquivo\SRC_Arquivo.Outputs[Saída de Origem de Arquivo Simples].ExternalColumns[TaxRate]"
+                      length="50"
+                      lineageId="Package\ETL - Arquivo\SRC_Arquivo.Outputs[Saída de Origem de Arquivo Simples].Columns[TaxRate]"
+                      name="TaxRate"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica se a coluna usa as rotinas de análise de localidade neutro mais rápidas."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica se os dados estão em formato binário."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL - Arquivo\SRC_Arquivo.Outputs[Saída de Origem de Arquivo Simples].Columns[Contact]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversão"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL - Arquivo\SRC_Arquivo.Outputs[Saída de Origem de Arquivo Simples].ExternalColumns[Contact]"
+                      length="50"
+                      lineageId="Package\ETL - Arquivo\SRC_Arquivo.Outputs[Saída de Origem de Arquivo Simples].Columns[Contact]"
+                      name="Contact"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica se a coluna usa as rotinas de análise de localidade neutro mais rápidas."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica se os dados estão em formato binário."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL - Arquivo\SRC_Arquivo.Outputs[Saída de Origem de Arquivo Simples].Columns[LastInvoiceDate]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversão"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL - Arquivo\SRC_Arquivo.Outputs[Saída de Origem de Arquivo Simples].ExternalColumns[LastInvoiceDate]"
+                      length="50"
+                      lineageId="Package\ETL - Arquivo\SRC_Arquivo.Outputs[Saída de Origem de Arquivo Simples].Columns[LastInvoiceDate]"
+                      name="LastInvoiceDate"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica se a coluna usa as rotinas de análise de localidade neutro mais rápidas."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica se os dados estão em formato binário."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\ETL - Arquivo\SRC_Arquivo.Outputs[Saída de Origem de Arquivo Simples].ExternalColumns[CustNo]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="CustNo" />
+                    <externalMetadataColumn
+                      refId="Package\ETL - Arquivo\SRC_Arquivo.Outputs[Saída de Origem de Arquivo Simples].ExternalColumns[Company]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Company" />
+                    <externalMetadataColumn
+                      refId="Package\ETL - Arquivo\SRC_Arquivo.Outputs[Saída de Origem de Arquivo Simples].ExternalColumns[Addr1]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Addr1" />
+                    <externalMetadataColumn
+                      refId="Package\ETL - Arquivo\SRC_Arquivo.Outputs[Saída de Origem de Arquivo Simples].ExternalColumns[Addr2]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Addr2" />
+                    <externalMetadataColumn
+                      refId="Package\ETL - Arquivo\SRC_Arquivo.Outputs[Saída de Origem de Arquivo Simples].ExternalColumns[City]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="City" />
+                    <externalMetadataColumn
+                      refId="Package\ETL - Arquivo\SRC_Arquivo.Outputs[Saída de Origem de Arquivo Simples].ExternalColumns[State]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="State" />
+                    <externalMetadataColumn
+                      refId="Package\ETL - Arquivo\SRC_Arquivo.Outputs[Saída de Origem de Arquivo Simples].ExternalColumns[Zip]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Zip" />
+                    <externalMetadataColumn
+                      refId="Package\ETL - Arquivo\SRC_Arquivo.Outputs[Saída de Origem de Arquivo Simples].ExternalColumns[Country]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Country" />
+                    <externalMetadataColumn
+                      refId="Package\ETL - Arquivo\SRC_Arquivo.Outputs[Saída de Origem de Arquivo Simples].ExternalColumns[Phone]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Phone" />
+                    <externalMetadataColumn
+                      refId="Package\ETL - Arquivo\SRC_Arquivo.Outputs[Saída de Origem de Arquivo Simples].ExternalColumns[FAX]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="FAX" />
+                    <externalMetadataColumn
+                      refId="Package\ETL - Arquivo\SRC_Arquivo.Outputs[Saída de Origem de Arquivo Simples].ExternalColumns[TaxRate]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="TaxRate" />
+                    <externalMetadataColumn
+                      refId="Package\ETL - Arquivo\SRC_Arquivo.Outputs[Saída de Origem de Arquivo Simples].ExternalColumns[Contact]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Contact" />
+                    <externalMetadataColumn
+                      refId="Package\ETL - Arquivo\SRC_Arquivo.Outputs[Saída de Origem de Arquivo Simples].ExternalColumns[LastInvoiceDate]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="LastInvoiceDate" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\ETL - Arquivo\SRC_Arquivo.Outputs[Saída de Erro de Origem de Arquivo Simples]"
+                  isErrorOut="true"
+                  name="Saída de Erro de Origem de Arquivo Simples">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\ETL - Arquivo\SRC_Arquivo.Outputs[Saída de Erro de Origem de Arquivo Simples].Columns[Coluna de Saída de Erro de Origem de Arquivo Simples]"
+                      codePage="1252"
+                      dataType="text"
+                      description="Coluna de Saída de Erro de Origem de Arquivo Simples"
+                      lineageId="Package\ETL - Arquivo\SRC_Arquivo.Outputs[Saída de Erro de Origem de Arquivo Simples].Columns[Coluna de Saída de Erro de Origem de Arquivo Simples]"
+                      name="Coluna de Saída de Erro de Origem de Arquivo Simples" />
+                    <outputColumn
+                      refId="Package\ETL - Arquivo\SRC_Arquivo.Outputs[Saída de Erro de Origem de Arquivo Simples].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\ETL - Arquivo\SRC_Arquivo.Outputs[Saída de Erro de Origem de Arquivo Simples].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\ETL - Arquivo\SRC_Arquivo.Outputs[Saída de Erro de Origem de Arquivo Simples].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\ETL - Arquivo\SRC_Arquivo.Outputs[Saída de Erro de Origem de Arquivo Simples].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\ETL - Arquivo\TGT_Arquivo"
+              componentClassID="Microsoft.FlatFileDestination"
+              contactInfo="Destino de Arquivo Simples;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos os Direitos Reservados; http://www.microsoft.com/sql/support;1"
+              description="Destino de Arquivo Simples"
+              localeId="1046"
+              name="TGT_Arquivo"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Especifica se os dados substituirão o arquivo de destino ou serão anexados a ele."
+                  name="Overwrite">true</property>
+                <property
+                  dataType="System.Null"
+                  description="Especifica o texto a ser gravado no arquivo de destino antes da gravação de quaisquer dados."
+                  expressionType="Notify"
+                  name="Header" />
+                <property
+                  dataType="System.Boolean"
+                  description="Quando o qualificador de texto está habilitado, ele especifica se o qualificador de texto nos dados gravados no arquivo de destino serão de saída ou não."
+                  name="EscapeQualifier">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\ETL - Arquivo\TGT_Arquivo.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[CN_TGT_Arquivo]"
+                  connectionManagerRefId="Package.ConnectionManagers[CN_TGT_Arquivo]"
+                  name="FlatFileConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\ETL - Arquivo\TGT_Arquivo.Inputs[Entrada de Destino de Arquivo Simples]"
+                  hasSideEffects="true"
+                  name="Entrada de Destino de Arquivo Simples">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\ETL - Arquivo\TGT_Arquivo.Inputs[Entrada de Destino de Arquivo Simples].Columns[CustNo]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="CustNo"
+                      externalMetadataColumnId="Package\ETL - Arquivo\TGT_Arquivo.Inputs[Entrada de Destino de Arquivo Simples].ExternalColumns[CustNo]"
+                      lineageId="Package\ETL - Arquivo\SRC_Arquivo.Outputs[Saída de Origem de Arquivo Simples].Columns[CustNo]" />
+                    <inputColumn
+                      refId="Package\ETL - Arquivo\TGT_Arquivo.Inputs[Entrada de Destino de Arquivo Simples].Columns[Company]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Company"
+                      externalMetadataColumnId="Package\ETL - Arquivo\TGT_Arquivo.Inputs[Entrada de Destino de Arquivo Simples].ExternalColumns[Company]"
+                      lineageId="Package\ETL - Arquivo\SRC_Arquivo.Outputs[Saída de Origem de Arquivo Simples].Columns[Company]" />
+                    <inputColumn
+                      refId="Package\ETL - Arquivo\TGT_Arquivo.Inputs[Entrada de Destino de Arquivo Simples].Columns[Addr1]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Addr1"
+                      externalMetadataColumnId="Package\ETL - Arquivo\TGT_Arquivo.Inputs[Entrada de Destino de Arquivo Simples].ExternalColumns[Addr1]"
+                      lineageId="Package\ETL - Arquivo\SRC_Arquivo.Outputs[Saída de Origem de Arquivo Simples].Columns[Addr1]" />
+                    <inputColumn
+                      refId="Package\ETL - Arquivo\TGT_Arquivo.Inputs[Entrada de Destino de Arquivo Simples].Columns[Addr2]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Addr2"
+                      externalMetadataColumnId="Package\ETL - Arquivo\TGT_Arquivo.Inputs[Entrada de Destino de Arquivo Simples].ExternalColumns[Addr2]"
+                      lineageId="Package\ETL - Arquivo\SRC_Arquivo.Outputs[Saída de Origem de Arquivo Simples].Columns[Addr2]" />
+                    <inputColumn
+                      refId="Package\ETL - Arquivo\TGT_Arquivo.Inputs[Entrada de Destino de Arquivo Simples].Columns[City]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="City"
+                      externalMetadataColumnId="Package\ETL - Arquivo\TGT_Arquivo.Inputs[Entrada de Destino de Arquivo Simples].ExternalColumns[City]"
+                      lineageId="Package\ETL - Arquivo\SRC_Arquivo.Outputs[Saída de Origem de Arquivo Simples].Columns[City]" />
+                    <inputColumn
+                      refId="Package\ETL - Arquivo\TGT_Arquivo.Inputs[Entrada de Destino de Arquivo Simples].Columns[State]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="State"
+                      externalMetadataColumnId="Package\ETL - Arquivo\TGT_Arquivo.Inputs[Entrada de Destino de Arquivo Simples].ExternalColumns[State]"
+                      lineageId="Package\ETL - Arquivo\SRC_Arquivo.Outputs[Saída de Origem de Arquivo Simples].Columns[State]" />
+                    <inputColumn
+                      refId="Package\ETL - Arquivo\TGT_Arquivo.Inputs[Entrada de Destino de Arquivo Simples].Columns[Zip]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Zip"
+                      externalMetadataColumnId="Package\ETL - Arquivo\TGT_Arquivo.Inputs[Entrada de Destino de Arquivo Simples].ExternalColumns[Zip]"
+                      lineageId="Package\ETL - Arquivo\SRC_Arquivo.Outputs[Saída de Origem de Arquivo Simples].Columns[Zip]" />
+                    <inputColumn
+                      refId="Package\ETL - Arquivo\TGT_Arquivo.Inputs[Entrada de Destino de Arquivo Simples].Columns[Country]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Country"
+                      externalMetadataColumnId="Package\ETL - Arquivo\TGT_Arquivo.Inputs[Entrada de Destino de Arquivo Simples].ExternalColumns[Country]"
+                      lineageId="Package\ETL - Arquivo\SRC_Arquivo.Outputs[Saída de Origem de Arquivo Simples].Columns[Country]" />
+                    <inputColumn
+                      refId="Package\ETL - Arquivo\TGT_Arquivo.Inputs[Entrada de Destino de Arquivo Simples].Columns[Phone]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Phone"
+                      externalMetadataColumnId="Package\ETL - Arquivo\TGT_Arquivo.Inputs[Entrada de Destino de Arquivo Simples].ExternalColumns[Phone]"
+                      lineageId="Package\ETL - Arquivo\SRC_Arquivo.Outputs[Saída de Origem de Arquivo Simples].Columns[Phone]" />
+                    <inputColumn
+                      refId="Package\ETL - Arquivo\TGT_Arquivo.Inputs[Entrada de Destino de Arquivo Simples].Columns[FAX]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="FAX"
+                      externalMetadataColumnId="Package\ETL - Arquivo\TGT_Arquivo.Inputs[Entrada de Destino de Arquivo Simples].ExternalColumns[FAX]"
+                      lineageId="Package\ETL - Arquivo\SRC_Arquivo.Outputs[Saída de Origem de Arquivo Simples].Columns[FAX]" />
+                    <inputColumn
+                      refId="Package\ETL - Arquivo\TGT_Arquivo.Inputs[Entrada de Destino de Arquivo Simples].Columns[TaxRate]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="TaxRate"
+                      externalMetadataColumnId="Package\ETL - Arquivo\TGT_Arquivo.Inputs[Entrada de Destino de Arquivo Simples].ExternalColumns[TaxRate]"
+                      lineageId="Package\ETL - Arquivo\SRC_Arquivo.Outputs[Saída de Origem de Arquivo Simples].Columns[TaxRate]" />
+                    <inputColumn
+                      refId="Package\ETL - Arquivo\TGT_Arquivo.Inputs[Entrada de Destino de Arquivo Simples].Columns[Contact]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Contact"
+                      externalMetadataColumnId="Package\ETL - Arquivo\TGT_Arquivo.Inputs[Entrada de Destino de Arquivo Simples].ExternalColumns[Contact]"
+                      lineageId="Package\ETL - Arquivo\SRC_Arquivo.Outputs[Saída de Origem de Arquivo Simples].Columns[Contact]" />
+                    <inputColumn
+                      refId="Package\ETL - Arquivo\TGT_Arquivo.Inputs[Entrada de Destino de Arquivo Simples].Columns[LastInvoiceDate]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="LastInvoiceDate"
+                      externalMetadataColumnId="Package\ETL - Arquivo\TGT_Arquivo.Inputs[Entrada de Destino de Arquivo Simples].ExternalColumns[LastInvoiceDate]"
+                      lineageId="Package\ETL - Arquivo\SRC_Arquivo.Outputs[Saída de Origem de Arquivo Simples].Columns[LastInvoiceDate]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\ETL - Arquivo\TGT_Arquivo.Inputs[Entrada de Destino de Arquivo Simples].ExternalColumns[CustNo]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="CustNo" />
+                    <externalMetadataColumn
+                      refId="Package\ETL - Arquivo\TGT_Arquivo.Inputs[Entrada de Destino de Arquivo Simples].ExternalColumns[Company]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Company" />
+                    <externalMetadataColumn
+                      refId="Package\ETL - Arquivo\TGT_Arquivo.Inputs[Entrada de Destino de Arquivo Simples].ExternalColumns[Addr1]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Addr1" />
+                    <externalMetadataColumn
+                      refId="Package\ETL - Arquivo\TGT_Arquivo.Inputs[Entrada de Destino de Arquivo Simples].ExternalColumns[Addr2]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Addr2" />
+                    <externalMetadataColumn
+                      refId="Package\ETL - Arquivo\TGT_Arquivo.Inputs[Entrada de Destino de Arquivo Simples].ExternalColumns[City]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="City" />
+                    <externalMetadataColumn
+                      refId="Package\ETL - Arquivo\TGT_Arquivo.Inputs[Entrada de Destino de Arquivo Simples].ExternalColumns[State]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="State" />
+                    <externalMetadataColumn
+                      refId="Package\ETL - Arquivo\TGT_Arquivo.Inputs[Entrada de Destino de Arquivo Simples].ExternalColumns[Zip]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Zip" />
+                    <externalMetadataColumn
+                      refId="Package\ETL - Arquivo\TGT_Arquivo.Inputs[Entrada de Destino de Arquivo Simples].ExternalColumns[Country]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Country" />
+                    <externalMetadataColumn
+                      refId="Package\ETL - Arquivo\TGT_Arquivo.Inputs[Entrada de Destino de Arquivo Simples].ExternalColumns[Phone]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Phone" />
+                    <externalMetadataColumn
+                      refId="Package\ETL - Arquivo\TGT_Arquivo.Inputs[Entrada de Destino de Arquivo Simples].ExternalColumns[FAX]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="FAX" />
+                    <externalMetadataColumn
+                      refId="Package\ETL - Arquivo\TGT_Arquivo.Inputs[Entrada de Destino de Arquivo Simples].ExternalColumns[TaxRate]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="TaxRate" />
+                    <externalMetadataColumn
+                      refId="Package\ETL - Arquivo\TGT_Arquivo.Inputs[Entrada de Destino de Arquivo Simples].ExternalColumns[Contact]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Contact" />
+                    <externalMetadataColumn
+                      refId="Package\ETL - Arquivo\TGT_Arquivo.Inputs[Entrada de Destino de Arquivo Simples].ExternalColumns[LastInvoiceDate]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="LastInvoiceDate" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\ETL - Arquivo.Paths[Saída de Origem de Arquivo Simples]"
+              endId="Package\ETL - Arquivo\TGT_Arquivo.Inputs[Entrada de Destino de Arquivo Simples]"
+              name="Saída de Origem de Arquivo Simples"
+              startId="Package\ETL - Arquivo\SRC_Arquivo.Outputs[Saída de Origem de Arquivo Simples]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--Esta seção CDATA contém as informações de layout do pacote. A seção inclui informações como coordenadas (x,y), largura e altura.-->
+<!--Se você editar manualmente esta seção e cometer algum erro, poderá excluí-la. -->
+<!--O pacote ainda poderá ser carregado normalmente, mas as informações de layout anteriores serão perdidas e o designer reorganizará automaticamente os elementos na superfície de design.-->
+<Objects
+  Version="8">
+  <!--Cada nó abaixo conterá propriedades que não afetam o comportamento em tempo de execução.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="143,42"
+          Id="Package\ETL - Arquivo"
+          TopLeft="66,47" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\ETL - Arquivo">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="139,42"
+          Id="Package\ETL - Arquivo\SRC_Arquivo"
+          TopLeft="140,41" />
+        <NodeLayout
+          Size="140,42"
+          Id="Package\ETL - Arquivo\TGT_Arquivo"
+          TopLeft="196,152" />
+        <EdgeLayout
+          Id="Package\ETL - Arquivo.Paths[Saída de Origem de Arquivo Simples]"
+          TopLeft="209.5,83">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="56.5,69"
+              Start="0,0"
+              End="56.5,61.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,30.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,30.5"
+                    Point2="0,34.5"
+                    Point3="4,34.5" />
+                  <mssgle:LineSegment
+                    End="52.5,34.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="52.5,34.5"
+                    Point2="56.5,34.5"
+                    Point3="56.5,38.5" />
+                  <mssgle:LineSegment
+                    End="56.5,61.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
